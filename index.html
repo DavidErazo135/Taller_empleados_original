@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sistema de Empleados</title>
 	<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
-	
+	<link rel="icon" type="image/x-icon" href="img/icon_pag.png">
 	<link href="/path/print.css" media="print" rel="stylesheet" />
 	<link rel="stylesheet" href="css/diseño1.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
@@ -18,212 +18,237 @@
 
 	<br>
 
-	
+	<style>
+		body {
+			background-image: url(img/fondo.jpg);
+			background-size: cover;
+		}
+	</style>
 
 </head>
 
 <body>
-			
+	<font color="white">
+		<div class="container" >
+			<div class="row">
+				<div class="col-8">
+					<h6>UNIVERSIDAD DE NARIÑO EXTENSIÓN IPIALES</h6>
+					<h6>DESARROLLADO POR:</h6>
+					
+					<h6>JESUS DAVID ERAZO REINA</h6>
+					<h6>LUIS ANDERSON CARDENAS</h6>
+				</div>
+				<div class="col-4">
+					<img heigth="100" width="100"src="img\udenar.png" alt="No hay imagen" >
+				</div>
+			</div>
+		</div>
+		<br>
+	</font>		
 	<div class="divisor"></div>
 
 	<div id="contenedorp" class="container, col-12" ><!--inicio contenedor principal class="d-flex align-items-center"-->
 		<div class="row">
 			<center>
-		<div id="contenedor2"class="col-8">
-			<div class="card border-info" >
-			<div class="card-body" >
-							
-				<li class="list-group-item">	
-				<div class="container">
-				<div class="row">
-				<div class="col-12">
-				<h5>Datos Personales</h5>
-			<center>
-<table border="5"bgcolor="#B08F8F" width="600" class="clase_table">
-<tr>
-<td align="center">
-<div class="container">
-<br>
-<div for="txt_nombre"><b>Nombre:</b>
-<input type="text" name="txt_nombre" id="txt_nombre" >
-</div>
+				<div id="contenedor2"class="col-8">
+					<div class="card border-info" >
+						<div class="card-body" >
+							<ul class="list-group list-group-light">
+								<li class="list-group-item">	
+									<div class="container">
+										<div class="row">
+											<div class="col-12">
+												<h5>Datos Personales</h5>
+												<center>
+													<table border="5"bgcolor="#E0F1F3" width="600" class="clase_table">
+														<tr>
+															<td align="center">
+																<div class="container">
+																	<br>
+																	<div for="txt_nombre"><b>Nombre:</b>
+																		<input type="text" name="txt_nombre" id="txt_nombre" >
+																	</div>
 
-<br>
+																	<br>
 
-<div for="txt_apellido"><b>Apellido:</b>
-<input type="text" name="txt_apellido" id="txt_apellido" >
-</div>
+																	<div for="txt_apellido"><b>Apellido:</b>
+																		<input type="text" name="txt_apellido" id="txt_apellido" >
+																	</div>
 
-<br>
+																	<br>
+																	
+																	<div class="container">	
+																		<div class="row">
+																			<div class="col-3">
+																				<div for="txt_sexo"><b>Sexo:</b></div>
+																			</div>
+																			<div class="col-3">
+																				<!-- Default radio -->
+																				<div class="form-check">
+																					<label class="form-check-label" for="flexRadioDefault1"> M </label>
+																					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+																				</div>
+																				<!-- Default checked radio -->
+																				<div class="form-check">
+																					<label class="form-check-label" for="flexRadioDefault2"> F </label>
+																					<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	
+																	
+																	<br>
 
-<div class="container">	
-<div class="row">
-<div class="col-3">
-<div for="txt_sexo"><b>Sexo:</b></div>
-</div>
-<div class="col-3">
-<!-- Default radio -->
-<div class="form-check">
-	<label class="form-check-label" for="flexRadioDefault1"> M </label>
-									<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-								</div>
-								<!-- Default checked radio -->
-								<div class="form-check">
-									<label class="form-check-label" for="flexRadioDefault2"> F </label>
-									<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
-								</div>
-							</div>
+																	<div for="fech_nac"><b>Fecha de Nacimiento:</b>
+																		<input style="background-color:transparent" type="date" id="fech_nac" name="fech_nac" value="2022-01-01" min="1900-01-01" max="3000-12-31">
+																	</div>
+
+																	<br>
+
+																	<div for="fech_ing"><b>Fecha de Ingreso:</b>
+																		<input style="background-color:transparent" type="date" id="fech_ing" name="fech_ing" value="2022-01-01" min="1900-01-01" max="3000-12-31">
+																	</div>
+
+																	<br>
+																</div>
+															</td>
+
+															<td>
+																<img heigth="200" width="200"src="img\perfil.png" alt="No hay imagen">
+															</td>	
+														</tr>	
+														<tr align="center">
+															<td colspan="2">
+																<button data-mdb-ripple-duration="10s" onclick="visualizarinfo()" type="button" class="btn btn-primary btn-lg">Listar Datos</button>
+															</td>
+														</tr>
+													</table>
+												</center>
+											</div>	
+										</div>
+									</div>
+								</li>
+
+
+								<li class="list-group-item">
+									<div class="container">
+										<div class="row">
+											<div class="col-12">
+												<h5>Salario</h5>
+												<center>
+													<table border="5"bgcolor="#E0F1F3" width="600" class="clase_table">
+														<tr>
+															<td>
+																<center>
+																	<div for="txt_sala">
+																	<b>	<p id="txt_sala">Salario:</b> $1.500.000  </p>
+																		
+																		<button data-mdb-ripple-duration="10s" onclick="modificarSalario()" type="button" class="btn btn-primary btn-lg">Modificar</button>
+																	</div>
+																</center>
+															</td>
+														</tr>	
+													</table>
+												</center>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li class="list-group-item">
+									<div class="container">
+										<div class="row">
+											<div class="col-12">
+												<h5>Cálculos</h5>
+												<center>
+													<table border="5"bgcolor="#E0F1F3" width="600" class="clase_table">
+														<tr>
+															<td>
+																<div class="container">
+																	<div class="row">
+																		<div class="col-6">
+																			<button data-mdb-ripple-duration="10s" onclick="calcularEdad()" type="button" class="btn btn-primary btn-lg">Calcular Edad</button>
+																		</div>
+																		<div class="col-6">
+																			<p type="text" name="cal_edad" id="cal_edad" >← presione para calular edad</p>
+																		</div>
+																	</div>
+																</div>
+															</td>
+														</tr>	
+														<tr>
+															<td>
+																<div class="container">
+																	<div class="row">
+																		<div class="col-6">
+																			<button data-mdb-ripple-duration="10s" onclick="calcularAntiguedad()" type="button" class="btn btn-primary btn-lg">Calcular Antiguedad</button>
+																		</div>
+																		<div class="col-6">
+																			<p type="text" name="cale_antig" id="cale_antig" >← presione para calular antiguedad</p>
+																		</div>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="container">
+																	<div class="row">
+																		<div class="col-6">
+																			<button data-mdb-ripple-duration="10s" onclick="calcularPrestaciones()" type="button" class="btn btn-primary btn-lg">Calcular Prestaciones</button>
+																		</div>
+																		<div class="col-6">
+																			<p type="text" name="cale_pres" id="cale_pres">← presione para calular prestaciones</p>
+																		</div>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</center>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li class="list-group-item">
+									<div class="container">
+										<div class="row">
+											<div class="col-12">
+												<h5>Puntos de Extensíon</h5>
+												<center>
+													<table border="5"bgcolor="#E0F1F3" width="600" class="clase_table">
+														<tr>
+															
+														</tr>
+														<tr>
+															<td>
+																<center>
+
+																	<button type="button" class="btn btn-warning" onclick="pagosTotales()">Total dinero recibido hasta la fecha</button>
+																	<script>
+																		document.write('<button type="button" class="btn btn-info" onclick="window.print()">Imprimir</button>');
+																	</script>
+																	
+																</center>
+															</td>
+														</tr>	
+													</table>
+												</center>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
-					
-					
-					<br>
-
-					<div for="fech_nac"><b>Fecha de Nacimiento:</b>
-						<input style="background-color:transparent" type="date" id="fech_nac" name="fech_nac" value="2022-01-01" min="1900-01-01" max="3000-12-31">
-					</div>
-
-					<br>
-
-					
-					<br>
-				</div>
-			</td>
-
-			<td>
-				<img heigth="200" width="200"src="img\perfil.webp" alt="No hay imagen">
-			</td>	
-		</tr>	
-		<tr align="center">
-			<td colspan="2">
-				<button data-mdb-ripple-duration="10s" onclick="visualizarinfo()" type="button" class="btn btn-primary btn-lg">Listar Datos</button>
-			</td>
-		</tr>
-	</table>
-</center>
-</div>	
-</div>
-</div>
-			</li>
-
-
-			<li class="list-group-item">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<h5>Salario</h5>
-<center>
-<table border="5"bgcolor="#B08F8F" width="600" class="clase_table">
-	<tr>
-		<td>
-			<center>
-				<div for="txt_sala">
-				<b>	<p id="txt_sala">Salario:</b>  </p>
-					
-					<button data-mdb-ripple-duration="10s" onclick="modificarSalario()" type="button" class="btn btn-primary btn-lg">Modificar</button>
 				</div>
 			</center>
-		</td>
-	</tr>	
-</table>
-</center>
-</div>
-</div>
-</div>
-</li>
-
-<li class="list-group-item">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<h5>Cálculos</h5>
-<center>
-<table border="5"bgcolor="#B08F8F" width="600" class="clase_table">
-	<tr>
-		<td>
-			<div class="container">
-				<div class="row">
-					<div class="col-6">
-						<button data-mdb-ripple-duration="10s" onclick="calcularEdad()" type="button" class="btn btn-primary btn-lg">Calcular Edad</button>
-					</div>
-					<div class="col-6">
-						<p type="text" name="cal_edad" id="cal_edad" ></p>
-					</div>
-				</div>
-			</div>
-		</td>
-									</tr>	
-									<tr>
-										<td>
-					<div class="container">
-						<div class="row">
-							<div class="col-6">
-								<button data-mdb-ripple-duration="10s" onclick="calcularAntiguedad()" type="button" class="btn btn-primary btn-lg">Calcular Antiguedad</button>
-							</div>
-							<div class="col-6">
-								<p type="text" name="cale_antig" id="cale_antig" ></p>
-							</div>
-						</div>
-					</div>
-				</td>
-									</tr>
-									<tr>
-										<td>
-<div class="container">
-	<div class="row">
-		<div class="col-6">
-			<button data-mdb-ripple-duration="10s" onclick="calcularPrestaciones()" type="button" class="btn btn-primary btn-lg">Calcular Prestaciones</button>
 		</div>
-		<div class="col-6">
-			<p type="text" name="cale_pres" id="cale_pres"></p>
-		</div>
-	</div>
-											</div>
-										</td>
-									</tr>
-								</table>
-							</center>
-						</div>
-					</div>
-				</div>
-			</li>
 
-			<li class="list-group-item">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h5>Puntos de Extensíon</h5>
-							<center>
-								<table border="5"bgcolor="#B08F8F" width="600" class="clase_table">
-									<tr>
-										
-									</tr>
-									<tr>
-										<td>
-											<center>
-
-												<button type="button" class="btn btn-warning" onclick="()">opcion1</button>
-												<button type="button" class="btn btn-warning" onclick="()">opcion2</button>
-												
-												
-											</center>
-										</td>
-									</tr>	
-								</table>
-							</center>
-						</div>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-</div>
-</div>
-</center>
-</div>
-
-</div>	<!--fin contenedor principal-->
+	</div>	<!--fin contenedor principal-->
 <!--hola-->
-<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
 </body>
 </html>
